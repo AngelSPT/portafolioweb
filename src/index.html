@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
     <title>Document</title>
 </head>
-<body>
-    <p>hola</p>
+<body class="">
+    <header class="bg-neutral-700">
+        <nav class="flex justify-between items-center w-[92%] bg-neutral-700 mx-auto font-normal">
+            <div >
+                <img class="w-20" src="./img/soyese.jpg" alt="...">
+            </div>
+            <div class="nav-links duration-700 md:static absolute bg-neutral-700 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="text-white hover:text-gray-300" href="">Home</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-gray-300" href="">Acerca de mi</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-gray-300" href="">Habilidades</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-gray-300" href="">Proyectos</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-gray-300" href="">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="px-5 py-2 text-white">español</button>
+                <img name="menu" onclick="onToggleMenu(this)" class="w-8 text-3xl cursor-pointer md:hidden" src="./img/menu.svg" alt="...">
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        const navLink = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            navLink.classList.toggle('top-[11%]')
+        }
+
+        
+        
+    </script>
 </body>
 </html>
