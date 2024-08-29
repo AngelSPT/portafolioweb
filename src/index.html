@@ -15,19 +15,22 @@
             <div class="nav-links duration-700 md:static absolute bg-neutral-700 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
-                        <a class="text-white hover:text-gray-300" href="">Home</a>
+                        <a class="text-white hover:text-gray-300" href="#home">Home</a>
                     </li>
                     <li>
-                        <a class="text-white hover:text-gray-300" href="">Acerca de mi</a>
+                        <a class="text-white hover:text-gray-300" href="#sobremi">Acerca de mi</a>
                     </li>
                     <li>
-                        <a class="text-white hover:text-gray-300" href="">Habilidades</a>
+                        <a class="text-white hover:text-gray-300" href="#formacion">Formación</a>
                     </li>
                     <li>
-                        <a class="text-white hover:text-gray-300" href="">Proyectos</a>
+                        <a class="text-white hover:text-gray-300" href="#habilidades">Habilidades</a>
                     </li>
                     <li>
-                        <a class="text-white hover:text-gray-300" href="">Contacto</a>
+                        <a class="text-white hover:text-gray-300" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-gray-300" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -38,14 +41,88 @@
         </nav>
     </header>
 
-    <script>
-        const navLink = document.querySelector('.nav-links')
-        function onToggleMenu(e){
-            navLink.classList.toggle('top-[11%]')
-        }
+    <main>
 
+        <section class="bg-slate-900 p-80 items-center" id="home">
+
+            <div>
+
+                <p class="text-white text-center">
+                    Esto seria home
+                </p>
+
+            </div>
+
+        </section>
         
-        
-    </script>
+        <section class="bg-white p-80 items-center" id="sobremi">
+
+            <div>
+
+                <p class="text-black text-center">
+                    Esto seria sobre mi
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="bg-slate-900 p-80 items-center" id="formacion">
+
+            <div>
+
+                <p class="text-white text-center">
+                    Esto seria sobre mi formacion
+                </p>
+
+            </div>
+            
+        </section>
+
+        <section class="bg-white p-80 items-center" id="habilidades">
+
+            <div>
+
+                <p class="text-black text-center">
+                    Esto seria sobre mis habilidades
+                </p>
+
+            </div>
+            
+        </section>
+
+        <section class="bg-slate-900 p-80 items-center" id="proyectos">
+
+            <div>
+
+                <p class="text-white text-center">
+                    Esto seria sobre mis proyectos
+                </p>
+
+            </div>
+            
+        </section>
+
+        <section class="bg-white p-80 items-center" id="contacto">
+
+            <div class="">
+
+                <p class="text-black text-center">
+                    Esto seria sobre contactarme
+                </p>
+
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+
+
+
+    </footer>
+    
+    <script src="../assets/scripts/script.js"></script>
 </body>
 </html>
