@@ -8,8 +8,8 @@
     <title>Document</title>
 </head>
 <body class="">
-    <header class="bg-neutral-700">
-        <nav class="flex justify-between items-center w-[92%] bg-neutral-700 mx-auto font-normal">
+    <header class="bg-neutral-700 navbar">
+        <nav class="flex fixed top-0 z-10 w-full justify-between items-center w-[92%] bg-neutral-700 mx-auto font-normal">
             <div >
                 <img class="w-20" src="../assets/img/soyese.jpg" alt="...">
             </div>
@@ -41,28 +41,45 @@
             </div>
 
             <script>
-
                 const navLink = document.querySelector('.nav-links')
                         function onToggleMenu(e){
                             navLink.classList.toggle('top-[11%]')
                         }
-
             </script>
         </nav>
     </header>
 
     <main>
 
-        <section class="bg-slate-900 p-88 items-center" id="home">
-
-            <div>
-
-                <p class="text-white text-center">
-                    Esto seria home
-                </p>
-
-            </div>
-
+        <section class="bg-slate-900 flex justify-between" id="home">
+                <div class="containerInf ">
+                    <div class="Presentation text-center text-white">
+                        <p class="sayHi">Hola Mundo! Soy</p>
+                        <p class="myName">"NOMBRE DE PERSONA"</p>
+                        <div class="speciality">
+                            <span>Especialidad Persona' </span>
+                        </div>
+                    </div>
+                    <div class="myDescription text-white">
+                        <p>descripcion personal | academica | profesional.....</p>
+                    </div>
+                    <div class="container-btns flex">
+                        <div class="button" data-tooltip="Size: X mb">
+                            <div class="button-wrapper">
+                              <div class="text-boton">Descargar Curriculum</div>
+                                <span class="icon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <button class="button2">
+                            <a class="text-boton2" href="#contacto">Contacto</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="containerImg">
+                    <img src="../assets/img/soyese.jpg" alt="foto de perfil" style="width: 300px; height: 300px;">
+                </div>
         </section>
         
         <section class="bg-white p-88 items-center" id="sobremi">
