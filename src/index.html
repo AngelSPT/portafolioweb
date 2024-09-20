@@ -9,34 +9,41 @@
 </head>
 <body class="bg-slate-900">
     <header class="bg-neutral-700 navbar">
-        <nav class="flex fixed top-0 z-10 w-full justify-between items-center  bg-neutral-700 mx-auto font-normal">
+        <nav class="flex fixed top-0 z-10  w-full justify-between items-center  bg-neutral-700 mx-auto font-normal" name="navbar">
             <div >
                 <img class="w-20" src="../assets/img/soyese.jpg" alt="...">
             </div>
             <div class="nav-links duration-700 md:static absolute bg-neutral-700 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
-                        <a class="nav-item" href="#home">Home</a>
+                        <a class="nav-item" href="#home" name="home">Home</a>
                     </li>
                     <li>
-                        <a class="nav-item" href="#sobremi">Acerca de mi</a>
+                        <a class="nav-item" href="#sobremi" name="acercaDemi" data-section="navbar" data-value="item2">Acerca de mi</a>
                     </li>
                     <li>
-                        <a class="nav-item" href="#formacion">Formación</a>
+                        <a class="nav-item" href="#formacion" name="formacion" data-section="navbar" data-value="item3">Formación</a>
                     </li>
                     <li>
-                        <a class="nav-item" href="#habilidades">Habilidades</a>
+                        <a class="nav-item" href="#habilidades" name="habilidades" data-section="navbar" data-value="item4">Habilidades</a>
                     </li>
                     <li>
-                        <a class="nav-item" href="#proyectos">Proyectos</a>
+                        <a class="nav-item" href="#proyectos" name="proyectos" data-section="navbar" data-value="item5">Proyectos</a>
                     </li>
                     <li>
-                        <a class="nav-item" href="#contacto">Contacto</a>
+                        <a class="nav-item" href="#contacto" name="contacto" data-section="navbar" data-value="item6">Contacto</a>
                     </li>
                 </ul>
             </div>
             <div class="flex items-center gap-6">
-                <button class="px-5 py-2 text-white hover:text-gray-300">español</button>
+                <div id="flags" class="flags flex justify-between">
+                    <div class="flag_item cursor-pointer" data-language="es">
+                        <img src="../assets/img/es.svg" alt="..." style="width: 35px; padding-right: 5px;">
+                    </div>
+                    <div class="flag_item cursor-pointer" data-language="en">
+                        <img src="../assets/img/us.svg" alt="..." style="width: 35px; padding-right: 5px;">
+                    </div>
+                </div>
                 <img name="menu" onclick="onToggleMenu(this)" class="w-8 text-3xl cursor-pointer md:hidden" src="../assets/img/menu.svg" alt="...">
             </div>
 
@@ -54,26 +61,26 @@
             <div class="flex justify-between  container-general mt-32">
                 <div class="containerInf">
                     <div class="Presentation text-center text-white">
-                        <p class="sayHi">Hola Mundo! Soy</p>
+                        <p class="sayHi" data-section="Home" data-value="saludo">Hola Mundo! Soy</p>
                         <p class="myName">"NOMBRE DE PERSONA"</p>
                         <div class="speciality">
-                            <span>Especialidad Persona' </span>
+                            <span data-section="Home" data-value="rol">Especialidad Persona' </span>
                         </div>
                 </div>
-                <div class="myDescription text-white">
-                    <p>descripcion personal | academica | profesional.....</p>
+                <div class="myDescription text-white ">
+                    <p data-section="Home" data-value="descripcion" class="w-[600px] text-lg">descripcion personal | academica | profesional.....</p>
                 </div>
                 <div class="container-btns flex">
                     <div class="button" data-tooltip="Size: X mb">
                         <div class="button-wrapper">
-                            <div class="text-boton">Descargar Curriculum</div>
-                                <span class="icon">
+                            <div class="text-boton" data-section="Home" data-value="cv-boton">Descargar Curriculum</div>
+                                <a href="../assets/ejemplo de visualizacion proyecto.pdf" class="icon" target="_blank">
                                   <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
-                                </span>
+                                </a>
                         </div>
                     </div>
                     <button class="button2">
-                        <a class="text-boton2" href="#contacto">Contacto</a>
+                        <a class="text-boton2" href="#contacto" data-section="Home" data-value="contacto-boton">Contacto</a>
                     </button>
                 </div>
                 </div>
@@ -103,7 +110,7 @@
         
         <section class="bg-white items-center" id="sobremi">
             <div class="title-aboutMe">
-                <h2 class="text-5xl font-bold flex justify-center pt-28">Sobre Mí</h2>
+                <h2 class="text-5xl font-bold flex justify-center pt-28" data-section="AcercaDeMi" data-value="titulo">Sobre Mí</h2>
             </div>
             <div class="container-aboutMe flex justify-between mt-32">
                 <div class="aboutMe-img ">
@@ -113,7 +120,7 @@
                     <span class="font-bold text-3xl">
                         "Nombre Persona"
                     </span>
-                    <p class="text-left text-2xl">
+                    <p class="text-left text-2xl" data-section="AcercaDeMi" data-value="descripcion">
                         (Es un texto de ejemplo) Soy estudiante del pregrado de Estadística y estudiante autodidacta de Desarrollo Web enfocado en programación Frontend.
                         Aspiro conseguir empleo en el mundo del Desarrollo Web, adquirir experiencia, nuevos conocimientos y fortalecer mi vida profesional.    
                     </p>
@@ -123,7 +130,7 @@
 
         <section class="bg-slate-900" id="formacion">
             <div class="title-formation">
-                <h2 class="text-5xl text-white font-bold flex justify-center pt-28 pb-12">Formación</h2>
+                <h2 class="text-5xl text-white font-bold flex justify-center pt-28 pb-12" data-section="Formacion" data-value="titulo">Formación</h2>
             </div>
             <div class="container-formation items-center mt-32 flex justify-around">
                 <div class="card">
@@ -151,7 +158,7 @@
 
         <section class="bg-white items-center" id="habilidades">
             <div class="title-hability">
-                <p class="text-5xl  font-bold flex justify-center pt-28 pb-12">Habilidades</p>
+                <p class="text-5xl  font-bold flex justify-center pt-28 pb-12" data-section="Habilidades" data-value="titulo">Habilidades</p>
             </div>
             <div class="container-formation items-center mt-10 mb-8 flex justify-around">
                 <div class="card">
@@ -201,7 +208,7 @@
 
         <section class="bg-slate-900" id="proyectos">
             <div class="title-proyects">
-                <p class="text-white text-5xl  font-bold flex justify-center pt-28 pb-12">Mis Proyectos</p>
+                <p class="text-white text-5xl  font-bold flex justify-center pt-28 pb-12" data-section="Proyectos" data-value="titulo">Mis Proyectos</p>
             </div>
             <div class="container-formation items-center mt-32 flex justify-around">
                 <div class="card2">
@@ -210,10 +217,10 @@
                         <img src="../assets/img/html5.svg" alt="" style="width: 100%; height: 145px; margin-bottom: 1.5rem;">
                         <div class="btns-proyect flex justify-around">
                             <button class="button2 mr-2">
-                                <a class="text-boton2 text-nowrap" href="#contacto">Ver proyecto</a>
+                                <a class="text-boton2 text-nowrap" href="../assets/ejemplo de visualizacion proyecto.pdf" target="_blank" data-section="Proyectos" data-value="btn-verProyecto">Ver proyecto</a>
                             </button>
                             <button class="button2">
-                                <img src="../assets/img/logo-github.svg" alt="" style="width: 30px; padding-left: 5px;"><a class="text-boton2" href="#contacto" style="padding-right: 8px;"> Repositorio</a>
+                                <img src="../assets/img/logo-github.svg" alt="" style="width: 30px; padding-left: 5px;"><a class="text-boton2" href="#coloquenLinkDeGithub" style="padding-right: 8px;" target="_blank" data-section="Proyectos" data-value="btn-repositorio"> Repositorio</a>
                             </button>
                         </div>
                     </div>
@@ -224,10 +231,10 @@
                         <img src="../assets/img/html5.svg" alt="" style="width: 100%; height: 145px; margin-bottom: 1.5rem;">
                         <div class="btns-proyect flex justify-around">
                             <button class="button2 mr-2">
-                                <a class="text-boton2 text-nowrap" href="#contacto">Ver proyecto</a>
+                                <a class="text-boton2 text-nowrap" href="../assets/ejemplo de visualizacion proyecto.pdf" target="_blank" data-section="Proyectos" data-value="btn-verProyecto">Ver proyecto</a>
                             </button>
                             <button class="button2">
-                                <img src="../assets/img/logo-github.svg" alt="" style="width: 30px; padding-left: 5px;"><a class="text-boton2" href="#contacto" style="padding-right: 8px;"> Repositorio</a>
+                                <img src="../assets/img/logo-github.svg" alt="" style="width: 30px; padding-left: 5px;"><a class="text-boton2" href="#coloquenLinkDeGithub" style="padding-right: 8px;" target="_blank" data-section="Proyectos" data-value="btn-repositorio"> Repositorio</a>
                             </button>
                         </div>
                     </div>
@@ -238,10 +245,10 @@
                         <img src="../assets/img/html5.svg" alt="" style="width: 100%; height: 145px; margin-bottom: 1.5rem;">
                         <div class="btns-proyect flex justify-around">
                             <button class="button2 mr-2">
-                                <a class="text-boton2 text-nowrap" href="#contacto">Ver proyecto</a>
+                                <a class="text-boton2 text-nowrap" href="../assets/ejemplo de visualizacion proyecto.pdf" target="_blank" data-section="Proyectos" data-value="btn-verProyecto">Ver proyecto</a>
                             </button>
                             <button class="button2">
-                                <img src="../assets/img/logo-github.svg" alt="" style="width: 30px; padding-left: 5px;"><a class="text-boton2" href="#contacto" style="padding-right: 8px;"> Repositorio</a>
+                                <img src="../assets/img/logo-github.svg" alt="" style="width: 30px; padding-left: 5px;"><a class="text-boton2" href="#coloquenLinkDeGithub" style="padding-right: 8px;" target="_blank" data-section="Proyectos" data-value="btn-repositorio"> Repositorio</a>
                             </button>
                         </div>
                     </div>
@@ -251,25 +258,28 @@
 
         <section class="bg-white" id="contacto">
             <div class="title-contact">
-                <p class="text-5xl  font-bold flex justify-center pt-28 pb-12">Contacto</p>
+                <p class="text-5xl  font-bold flex justify-center pt-28 pb-12" data-section="Contacto" data-value="titulo">Contacto</p>
             </div>
-            <div class="contact-container bg-slate-800 rounded-2xl flex justify-center mx-auto w-2/3 h-[620px]">
-                <div class="inputs mt-16 text-center mb-16">
-                    <p class="text-xl text-white mb-12">Completa el formulario para ponerme en contacto contigo lo mas pronto posible</p>
-                    <div class="form-control mb-10"><input placeholder="Nombre | Name" type="text" name="text" class="input">
+            <form action="https://formsubmit.co/samuelmarcanosalasar@gmail.com" method="POST" class="contact-container bg-slate-800 rounded-2xl flex justify-center mx-auto w-2/3 h-[625px]">
+                <div class="inputs mt-6 text-center mb-16">
+                    <p class="text-xl text-white mb-6" data-section="Contacto" data-value="texto">Completa el formulario para ponerme en contacto contigo lo mas pronto posible</p>
+                    <div class="form-control mb-10"><input placeholder="Nombre | Name" type="text" name="name" class="input">
                     </div>
-                    <div class="form-control mb-10"><input placeholder="Email" type="text" name="text" class="input">
+                    <div class="form-control mb-10"><input placeholder="Email" type="email" name="email" class="input">
                     </div>
-                    <div class="form-control mb-10"><input placeholder="Asunto | Subject" type="text" name="text" class="input">
+                    <div class="form-control mb-10"><input placeholder="Asunto | Subject" type="text" name="subject" class="input">
                     </div>
-                    <div class="btn-formulario text-center m-auto">
-                        <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">Enviar</button>
+                    <div class="form-control mb-4"><textarea placeholder="Escribe tu mensaje | Write your message" name="message" class="input2"></textarea>
                     </div>
-
+                    <button class="btn-formulario text-center m-auto" id="btn-enviar" type="submit" data-section="Contacto" data-value="btn-enviar">Enviar</button>
+                    
+                    
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/">
+                    <input type="hidden" name="_captcha" value="false">
                 </div>
-
                 
-            </div>
+                
+            </form>
             
         </section>
 

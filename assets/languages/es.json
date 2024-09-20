@@ -1,0 +1,38 @@
+{
+    "navbar": {
+        "item1": "home",
+        "item2": "Acerca de mi",
+        "item3": "Formación",
+        "item4": "Habilidades",
+        "item5": "Proyectos",
+        "item6":"Contacto"
+    },
+    "Home" :{
+        "saludo": "Hola mundo! Soy",
+        "rol": "Especialidad Persona'",
+        "descripcion": "descripcion personal | academica | profesional.....",
+        "cv-boton": "Descargar Curriculum",
+        "contacto-boton": "Contacto"
+    },
+    "AcercaDeMi":{
+        "titulo": "Sobre mí",
+        "descripcion": "(Es un texto de ejemplo) Soy estudiante del pregrado de Estadística y estudiante autodidacta de Desarrollo Web enfocado en programación Frontend. Aspiro conseguir empleo en el mundo del Desarrollo Web, adquirir experiencia, nuevos conocimientos y fortalecer mi vida profesional." 
+    },
+    "Formacion":{
+        "titulo": "Formación"
+    },
+    "Habilidades":{
+        "titulo": "Habilidades"
+    },
+    "Proyectos":{
+        "titulo": "Proyectos",
+        "btn-verProyecto": "Ver Proyecto",
+        "btn-repositorio": "Repositorio"
+    },
+    "Contacto":{
+        "titulo": "Contacto",
+        "texto": "Completa el formulario para ponerme en contacto contigo lo mas pronto posible",
+        "btn-enviar": "Enviar"
+    }
+
+}
