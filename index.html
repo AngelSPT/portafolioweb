@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="es">
+< lang="es">
+
+    <!-- Head-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +10,11 @@
     <link rel="shortcut icon" href="../assets/img/logo-portafolio-sin-fondo.ico">
     <title>Portafolio-web | Samuel Marcano</title>
 </head>
+
+<!-- Body-->
 <body class="bg-slate-900">
+
+    <!-- Navbar-->
     <header class="bg-neutral-700 navbar">
         <nav class="flex fixed top-0 z-10  w-full justify-between items-center  bg-neutral-700 mx-auto font-normal" name="navbar">
             <div >
@@ -47,7 +53,6 @@
                 </div>
                 <img name="menu" onclick="onToggleMenu(this)" class="w-8 text-3xl cursor-pointer md:hidden" src="../assets/img/menu.svg" alt="...">
             </div>
-
             <script>
                 const navLink = document.querySelector('.nav-links')
                         function onToggleMenu(e){
@@ -57,7 +62,10 @@
         </nav>
     </header>
 
+    <!-- Main-->
     <main>
+
+        <!-- Home-->
         <section class="bg-slate-900 content-center" id="home">
             <div class="flex justify-between  container-general mt-32">
                 <div class="containerInf">
@@ -76,7 +84,7 @@
                         <div class="button-wrapper">
                             <div class="text-boton" data-section="Home" data-value="cv-boton">Descargar Curriculum</div>
                                 <a href="../assets/ejemplo de visualizacion proyecto.pdf" class="icon" target="_blank">
-                                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
                                 </a>
                         </div>
                     </div>
@@ -85,7 +93,6 @@
                     </button>
                 </div>
                 </div>
-    
                 <div class="containerImg">
                     <img src="../assets/img/logo portafolio sin fondo.png" alt="foto de perfil" style="width: 450px; height: 450px;">
                 </div>
@@ -97,7 +104,6 @@
                     </span>
                     <span class="BG"></span>
                 </button>
-        
                     <button class="Btn ml-4" target="_blank" onClick="Redireccion1()" >
                     <span class="svgContainer">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
@@ -106,8 +112,6 @@
                     </span>
                     <span class="BG"></span>
                     </button>
-
-
                     <script>
                             function Redireccion1(){
                                 window.location.href ="https://www.linkedin.com/in/samuel-marcano-netgen/"
@@ -119,6 +123,7 @@
             </div>
         </section>
         
+        <!-- Acerca de mi -->
         <section class="bg-white items-center" id="sobremi">
             <div class="title-aboutMe">
                 <h2 class="text-5xl font-bold flex justify-center pt-28" data-section="AcercaDeMi" data-value="titulo">Sobre Mí</h2>
@@ -138,6 +143,7 @@
             </div>
         </section>
 
+        <!-- Formación -->
         <section class="bg-slate-900" id="formacion">
             <div class="title-formation">
                 <h2 class="text-5xl text-white font-bold flex justify-center pt-28 pb-12" data-section="Formacion" data-value="titulo">Formación</h2>
@@ -162,10 +168,9 @@
                     </div>
                 </div>
             </div>
-            
-            
         </section>
 
+        <!-- Habilidades -->
         <section class="bg-white items-center" id="habilidades">
             <div class="title-hability">
                 <p class="text-5xl  font-bold flex justify-center pt-28 pb-12" data-section="Habilidades" data-value="titulo">Habilidades</p>
@@ -210,12 +215,10 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
         </section>
 
+        <!-- Proyectos -->
         <section class="bg-slate-900" id="proyectos">
             <div class="title-proyects">
                 <p class="text-white text-5xl  font-bold flex justify-center pt-28 pb-12" data-section="Proyectos" data-value="titulo">Mis Proyectos</p>
@@ -266,6 +269,7 @@
             </div>
         </section>
 
+        <!-- Contacto -->
         <section class="bg-white" id="contacto">
             <div class="title-contact">
                 <p class="text-5xl  font-bold flex justify-center pt-28 pb-12" data-section="Contacto" data-value="titulo">Contacto</p>
@@ -292,9 +296,9 @@
             </form>
             
         </section>
-
     </main>
 
+    <!-- Pie de pagina -->
     <footer class="bg-slate-900 h-44">
         <div class="btns-redes flex justify-center mt-6">
             <button class="Btn mb-4 ml-4">
@@ -303,7 +307,6 @@
                 </span>
                 <span class="BG"></span>
                 </button>
-    
                 <button class="Btn ml-4">
                 <span class="svgContainer">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
@@ -317,11 +320,9 @@
             <p class="text-white text-xl text-center">Copyright - 2024 | GusMaquetador</p>
         </div>
         </div>
-        
-
-
     </footer>
     
+
     <script src="../assets/scripts/script.js"></script>
 </body>
 </html>
